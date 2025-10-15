@@ -1,56 +1,123 @@
 body {
-    background-image: url("Assets/Images/WebsiteBackground.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;   
+    background: linear-gradient(180deg, #06141B 0%, #11212D 100%);
+    color: #CCD0CF;
+    background-size: cover;
     width: 100%;
-    height: 100vh;   
     overflow-x: hidden;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
 }
+
 main {
     text-align: center;
 }
+
 footer {    
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;    
-   color: whitesmoke;
-   background-color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;    
+    color: #CCD0CF;
+    background-color: rgba(17, 33, 45, 0.9);
+    border-top: 1px solid #253745;
+    backdrop-filter: blur(6px);
 }
-footer p{
-    background-color: black;
+footer p {
+    background-color: transparent;
 }
-nav 
-{
+
+nav {
     width: 30%;
-    border-radius: 6px;
-    margin: auto;
+    border-radius: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgba(17, 33, 45, 0.9);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
 }
+
 nav a {    
-    color: whitesmoke;
-    background-color: black;
+    color: #CCD0CF;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex: 1;
     text-align: center;
     padding: 15px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
 }
+
 nav a:hover {
-    color: black;
-    background-color: whitesmoke;
+    color: #06141B;
+    background-color: #9BA8AB;
+    border-radius: 0;
 }
+
+#projectsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 70px 0;
+}
+
+.project-card {
+    background-color: #22303f;
+    border-radius: 16px;
+    width: 280px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.github-link {
+    background-color:#253745;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.project-card p {
+    font-size: 14px;
+    color: #9BA8AB;
+    margin: 10px;
+}
+
+.project-card a {
+    color: #CCD0CF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.project-card a:hover {
+    color: #4A5C6A;
+}
+.image-link :hover{
+    opacity: .5;
+}
+
+
 @media (max-width: 800px) {
     nav {
-        width: 80%;            
+        width: 80%;
         flex-direction: column; 
     }
 
     nav a {
         flex: none;           
-        border-bottom: 1px solid black; 
+        border-bottom: 1px solid #253745; 
     }
-
 }
