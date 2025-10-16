@@ -1,4 +1,5 @@
-[
+{
+  "projects":[
   {
     "name": "Project Uno",
     "image": "./Assets/Images/witcher.jpg",
@@ -34,4 +35,38 @@
     "link": "najeeullah.com",
     "gitlink": "najeeullah.com"
   }
+],
+
+"socials":[
+  {    
+      "name": "Itch.io",
+      "icon": "./Assets/Icons/itch.svg",
+      "link": "https://www.itch.io"
+  },
+  {    
+      "name": "BlueSky",
+      "icon": "./Assets/Icons/bluesky.svg",
+      "link": "https://www.bluesky.app"
+  },
+  {    
+      "name": "Github",
+      "icon": "./Assets/Icons/github.svg",
+      "link": "https://www.github.com"
+  },
+  {    
+      "name": "Itch.io",
+      "icon": "./Assets/Icons/itch.svg",
+      "link": "https://www.itch.io"
+  },
+  {    
+      "name": "BlueSky",
+      "icon": "./Assets/Icons/bluesky.svg",
+      "link": "https://www.bluesky.app"
+  },
+  {    
+      "name": "Github",
+      "icon": "./Assets/Icons/github.svg",
+      "link": "https://www.github.com"
+  }
 ]
+}

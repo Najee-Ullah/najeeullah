@@ -110,6 +110,89 @@ nav a:hover {
 }
 
 
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-decoration: none;  
+  color: #CCD0CF;
+  transition: transform 0.2s ease;
+}
+.social-icon {
+  width: 40px;       
+  height: 40px;
+  object-fit: contain;
+}
+.social-item:hover {
+  transform: translateY(-5px);
+  opacity: .8;
+}
+
+.contact-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 64px 32px 128px;
+  gap: 32px;
+  text-align: center;
+}
+
+.email-section, .social-container {
+  background-color: rgba(34, 48, 63, 0.85);
+  border-radius: 16px;
+  padding: 24px 24px 32px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-section h2,
+.social-container h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  color: #CCD0CF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #253745;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.email-address {
+  font-size: 17.6px;
+  margin: 8px 0 24px;
+  color: #9BA8AB;
+}
+
+.email-button {
+  display: inline-block;
+  background: #9BA8AB;
+  color: #06141B;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.email-button:hover {
+  transform: scale(1.05);
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
+  margin-top: 10px;
+}
+
 @media (max-width: 800px) {
     nav {
         width: 80%;
@@ -120,4 +203,14 @@ nav a:hover {
         flex: none;           
         border-bottom: 1px solid #253745; 
     }
+    
+  .contact-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px 128px; 
+  }
+  .email-section, .social-container {
+    width: 80%;
+    max-width: none;
+  }
 }
