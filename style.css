@@ -1,4 +1,4 @@
-:root.k {
+:root {
   --bg-gradient-start: #06141B;
   --bg-gradient-end: #11212D;
   --text-color: #CCD0CF;
@@ -20,7 +20,7 @@
   --copy-tooltip-text: #fffdf6;
 }
 
-:root {
+:root.light {
   --bg-gradient-start: #E2EDF3;
   --bg-gradient-end: #CCD9ED;
   --text-color: #183C73;
@@ -41,6 +41,11 @@
   --github-link-hover-color: #7D94C4;
   --copy-tooltip-bg: #7D94C4;
   --copy-tooltip-text: #FFFFFF;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -74,6 +79,16 @@ footer {
 footer p {
   background-color: transparent;
 }
+h1 {
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--accent-color); 
+  border-bottom: 4px solid var(--icon-color);
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;             
+}
 
 nav {
   width: 30%;
@@ -85,6 +100,10 @@ nav {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   backdrop-filter: blur(8px);
+  position: fixed;
+  top: 5px;
+  left: 33%;
+  z-index: 10;
 }
 
 nav a {    
@@ -293,7 +312,8 @@ nav a:hover {
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px 10%;
-  gap: 5%;
+  gap: 25%;
+  margin-top: 10%;
 }
 
 .intro-section {
@@ -401,12 +421,14 @@ nav a:hover {
 
 .theme-button:hover img {
     transform: rotate(20deg);
+    filter: brightness(1.2);
 }
 /*Responsive*/
 @media (max-width: 800px) {
   nav {
     width: 80%;
-    flex-direction: column; 
+    flex-direction: column;     
+    left: 10%;
   }
 
   nav a {
@@ -428,6 +450,7 @@ nav a:hover {
   .home-layout {
     flex-direction: column;
     align-items: center;
+    margin-top: 25%;
   }
 
   .intro-section, 

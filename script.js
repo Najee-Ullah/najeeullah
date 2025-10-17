@@ -122,11 +122,11 @@ async function setupDarkMode(){
 const themeIcon = document.getElementById('themeIcon');
 
 themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('k');
-    if(document.documentElement.classList.contains('k')) {
-        themeIcon.src = '/Assets/Icons/light-dark-mode-flat.svg';
+    document.documentElement.classList.toggle('light');
+    if(document.documentElement.classList.contains('light')) {
+      themeIcon.src = '/Assets/Icons/dark-mode.svg';  
     } else {
-        themeIcon.src = '/Assets/Icons/dark-mode.svg';
+        themeIcon.src = '/Assets/Icons/light-dark-mode-flat.svg';
     }
 });
 
