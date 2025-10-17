@@ -423,18 +423,14 @@ nav a:hover {
     transform: rotate(20deg);
     filter: brightness(1.2);
 }
+
+
 /*Responsive*/
 @media (max-width: 800px) {
   nav {
-    width: 80%;
-    flex-direction: column;     
-    left: 10%;
+    display: none;
   }
 
-  nav a {
-    flex: none;           
-    border-bottom: 1px solid var(--border-color); 
-  }
     
   .contact-layout {
     flex-direction: column;
@@ -450,7 +446,6 @@ nav a:hover {
   .home-layout {
     flex-direction: column;
     align-items: center;
-    margin-top: 25%;
   }
 
   .intro-section, 
