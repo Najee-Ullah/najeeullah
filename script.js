@@ -55,3 +55,23 @@ async function loadSocials() {
     console.error("Error loading social links:", error);
   }
 }
+
+// Copy email to clipboard 
+document.addEventListener("DOMContentLoaded", () => {
+  const copyIcon = document.getElementById("copyEmailIcon");
+  const emailText = document.getElementById("emailAddress");
+  const tooltip = document.getElementById("copyTooltip");
+
+  if (copyIcon && emailText && tooltip) {
+    copyIcon.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(emailText.textContent.trim());
+        // Show tooltip
+        tooltip.classList.add("show");
+        setTimeout(() => tooltip.classList.remove("show"), 1500);
+      } catch (error) {
+        console.error("Failed to copy email:", error);
+      }
+    });
+  }
+});
