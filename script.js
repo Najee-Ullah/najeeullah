@@ -117,6 +117,21 @@ async function loadDevelopments() {
   }
 }
 
+async function setupDarkMode(){
+  const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('k');
+    if(document.documentElement.classList.contains('k')) {
+        themeIcon.src = '/Assets/Icons/light-dark-mode-flat.svg';
+    } else {
+        themeIcon.src = '/Assets/Icons/dark-mode.svg';
+    }
+});
+
+}
+
 // Copy email to clipboard 
 document.addEventListener("DOMContentLoaded", () => {
   const copyIcon = document.getElementById("copyEmailIcon");

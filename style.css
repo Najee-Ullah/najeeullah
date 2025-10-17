@@ -1,128 +1,188 @@
+:root.k {
+  --bg-gradient-start: #06141B;
+  --bg-gradient-end: #11212D;
+  --text-color: #CCD0CF;
+  --accent-color: #9BA8AB;
+  --card-bg: #22303f;
+  --card-each-bg: #253745;
+  --hover-bg: #9BA8AB;
+  --hover-text: #06141B;
+  --border-color: #253745;
+  --footer-bg: rgba(17, 33, 45, 0.9);
+  --shadow-color: rgba(0,0,0,0.4);
+  --dark-bg: #1e1e1e;
+  --dark-shadow: #0d0d0d;
+
+  --icon-color: #CCD0CF;
+  --github-link-color: #0d0d0d;
+  --github-link-hover-color: #BED2D6;
+  --copy-tooltip-bg: #9BA8AB;
+  --copy-tooltip-text: #fffdf6;
+}
+
+:root {
+  --bg-gradient-start: #E2EDF3;
+  --bg-gradient-end: #CCD9ED;
+  --text-color: #183C73;
+  --accent-color: #5974AB;
+  --card-bg: #F6F8FB;
+  --card-each-bg: #CCD9ED;
+  --hover-bg: #7D94C4;
+  --hover-text: #FFFFFF;
+  --border-color: #5974AB;
+  --footer-bg: rgba(226, 237, 243, 0.9);
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --dark-bg: #E2EDF3;
+  --dark-shadow: #7D94C4;
+
+  --icon-color: #183C73;
+  --icon-hover-color: #5974AB;
+  --github-link-color: #CCD9ED;
+  --github-link-hover-color: #7D94C4;
+  --copy-tooltip-bg: #7D94C4;
+  --copy-tooltip-text: #FFFFFF;
+}
+
+
 body {
-    background: linear-gradient(180deg, #06141B 0%, #11212D 100%);
-    color: #CCD0CF;
-    background-size: cover;
-    width: 100%;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
+  background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  color: var(--text-color);
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 footer {    
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;    
-    color: #CCD0CF;
-    background-color: rgba(17, 33, 45, 0.9);
-    border-top: 1px solid #253745;
-    backdrop-filter: blur(6px);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;    
+  color: var(--text-color);
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
+  backdrop-filter: blur(6px);
 }
+
 footer p {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 nav {
-    width: 30%;
-    border-radius: 20px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(17, 33, 45, 0.9);
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    backdrop-filter: blur(8px);
+  width: 30%;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--footer-bg);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
 }
 
 nav a {    
-    color: #CCD0CF;
-    text-decoration: none;
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color);
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #06141B;
-    background-color: #9BA8AB;
-    border-radius: 0;
+  color: var(--hover-text);
+  background-color: var(--hover-bg);
+  border-radius: 0;
 }
 
 #projectsGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 70px 0;
 }
 
 .project-card {
-    background-color: #22303f;
-    border-radius: 16px;
-    width: 280px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    padding-bottom: 10px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  width: 280px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 10px;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
 }
 
 .github-link {
-    background-color:#253745;
+  background-color: var(--github-link-color);
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.github-link:hover {
+  background-color: var(--github-link-hover-color);
 }
 
 .project-card img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
+
 .project-card p {
-    font-size: 14px;
-    color: #9BA8AB;
-    margin: 10px;
+  font-size: 14px;
+  color: var(--accent-color);
+  margin: 10px;
 }
 
 .project-card a {
-    color: #CCD0CF;
-    text-decoration: none;
-    margin: 0 5px;
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .project-card a:hover {
-    color: #4A5C6A;
-}
-.image-link :hover{
-    opacity: .5;
+  color: #4A5C6A;
 }
 
+.image-link :hover {
+  opacity: .5;
+}
 
 .social-item {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   text-decoration: none;  
-  color: #CCD0CF;
+  color: var(--text-color);
   transition: transform 0.2s ease;
 }
+
 .social-icon {
   width: 40px;       
   height: 40px;
   object-fit: contain;
 }
+
 .social-item:hover {
   transform: translateY(-5px);
   opacity: .8;
@@ -139,10 +199,11 @@ nav a:hover {
 }
 
 .email-section, .social-container {
-  background-color: rgba(34, 48, 63, 0.85);
+  background-color: var(--card-bg);
+  color: var(--text-color);
   border-radius: 16px;
   padding: 24px 24px 32px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 10px var(--shadow-color);
   flex: 1 1 300px;
   max-width: 400px;
   display: flex;
@@ -154,10 +215,10 @@ nav a:hover {
 .social-container h2 {
   margin: 0 0 24px;
   font-size: 22px;
-  color: #CCD0CF;
+  color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 1px solid #253745;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 8px;
   width: 100%;
   text-align: center;
@@ -166,13 +227,13 @@ nav a:hover {
 .email-address {
   font-size: 17.6px;
   margin: 8px 0 24px;
-  color: #9BA8AB;
+  color: var(--accent-color);
 }
 
 .email-button {
   display: inline-block;
-  background: #9BA8AB;
-  color: #06141B;
+  background: var(--accent-color);
+  color: var(--hover-text);
   padding: 10px 22px;
   border-radius: 8px;
   text-decoration: none;
@@ -192,6 +253,7 @@ nav a:hover {
   justify-items: center;
   margin-top: 10px;
 }
+
 .email-wrapper {
   display: flex;
   align-items: center;
@@ -213,7 +275,7 @@ nav a:hover {
 }
 
 .copy-tooltip {
-  color: white;
+  color: var(--copy-tooltip-text);
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   transform: translateY(-5px);
@@ -237,28 +299,28 @@ nav a:hover {
 .intro-section {
   width: 45%;
   text-align: left;
+  padding-bottom: 10px;
 }
 
 .intro-section .name {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #ccd0cf;
+  color: var(--text-color);
 }
 
 .intro-section .intro {
   font-size: 16px;
   line-height: 1.6;
-  color: #9ba8ab;
+  color: var(--accent-color);
   margin-bottom: 20px;
 }
 
-
 .interests h2 {
   font-size: 20px;
-  border-bottom: 1px solid #253745;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 6px;
   margin-bottom: 10px;
-  color: #ccd0cf;
+  color: var(--text-color);
 }
 
 #interestsList {
@@ -267,32 +329,29 @@ nav a:hover {
 }
 
 .home-card {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+  background-color: var(--card-each-bg);
+  color: var(--text-color);
   border-radius: 10px;
   padding: 2px;
   margin: 5px;
   text-align: center;
   font-size: 16px;
   transition: all 0.2s ease;
-  box-shadow: 0 6px 0 #0d0d0d;
+  box-shadow: 0 6px 2px var(--dark-shadow);
 }
 
 .home-card:hover {
-  transform: translateY(3px);
-  box-shadow: 0 2px 0 #0d0d0d;
-  background-color: #2a2a2a;
-}
-
-.home-card:active {
   transform: translateY(6px);
   box-shadow: none;
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
 }
 
 /* ---------------- Right Side(tools&development) ---------------- */
 
 .skills-section {
   width: 45%;
+  margin-bottom: 33px;
 }
 
 .skills-grid {
@@ -302,17 +361,16 @@ nav a:hover {
 }
 
 .box {
-  background-color: #22303f;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  border: 1px solid #253745;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  border: 1px solid var(--border-color);
 }
 
 .box h2 {
   font-size: 20px;
-  color: #ccd0cf;
-  border-bottom: 1px solid #253745;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 6px;
   margin-bottom: 10px;
   text-align: left;
@@ -323,28 +381,50 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
+/*-------------DarkMode---------------------*/
+.theme-button {
+    position: fixed;
+    top: 16px;     
+    left: 16px;     
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 8px;    
+}
 
+.theme-button img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
 
+.theme-button:hover img {
+    transform: rotate(20deg);
+}
+/*Responsive*/
 @media (max-width: 800px) {
-    nav {
-        width: 80%;
-        flex-direction: column; 
-    }
+  nav {
+    width: 80%;
+    flex-direction: column; 
+  }
 
-    nav a {
-        flex: none;           
-        border-bottom: 1px solid #253745; 
-    }
+  nav a {
+    flex: none;           
+    border-bottom: 1px solid var(--border-color); 
+  }
     
   .contact-layout {
     flex-direction: column;
     align-items: center;
     padding: 48px 16px 128px; 
   }
+
   .email-section, .social-container {
     width: 80%;
     max-width: none;
   }
+
   .home-layout {
     flex-direction: column;
     align-items: center;
@@ -354,4 +434,15 @@ nav a:hover {
   .skills-section {
     width: 90%;
   }
+
+  .theme-button {
+        top: 12px;      
+        left: 12px;     
+        padding: 6px;  
+    }
+
+    .theme-button img {
+        width: 20px;    
+        height: 20px;
+    }
 }
