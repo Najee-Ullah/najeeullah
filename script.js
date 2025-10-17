@@ -1,3 +1,4 @@
+//Project Page
 async function loadProjects() {
   try {
     const response = await fetch("data.json");
@@ -33,7 +34,7 @@ async function loadProjects() {
     console.error("Error loading projects:", error);
   }
 }
-
+//Contact Page
 async function loadSocials() {
   try {
     const response = await fetch("data.json");
@@ -53,6 +54,66 @@ async function loadSocials() {
     });
   } catch (error) {
     console.error("Error loading social links:", error);
+  }
+}
+//Home Page
+async function loadInterests() {
+  try {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    const interests = data.interests;
+    const container = document.getElementById("interestsList");
+
+    interests.forEach(interest => {
+      const card = document.createElement("div");
+      card.classList.add("home-card");
+      card.innerHTML = `
+      <p class="interest-text">${interest}</p>`
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error loading interest text:", error);
+  }
+}
+async function loadTools() {
+ 
+  try {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    const tools = data.tools;
+    const container = document.getElementById("toolsGrid");
+
+    tools.forEach(tool => {
+      const card = document.createElement("div");
+      card.classList.add("home-card");
+      card.innerHTML = `
+      <p class="interest-text">${tool}</p>`
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error loading tools text:", error);
+  }
+}
+async function loadDevelopments() {
+  
+  try {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    const devs = data.development;
+    const container = document.getElementById("developmentGrid");
+
+    devs.forEach(dev => {
+      const card = document.createElement("div");
+      card.classList.add("home-card");
+      card.innerHTML = `
+      <p class="interest-text">${dev}</p>`
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error loading interest text:", error);
   }
 }
 

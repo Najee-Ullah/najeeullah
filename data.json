@@ -68,5 +68,20 @@
       "icon": "./Assets/Icons/github.svg",
       "link": "https://www.github.com"
   }
-]
+],
+  "interests": [
+    "Video Games"
+  ],
+  "tools": [
+    "Unity",
+    "Example",
+    "Git & GitHub",
+    "Blender"
+  ],
+  "development": [
+    "C#",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ]
 }

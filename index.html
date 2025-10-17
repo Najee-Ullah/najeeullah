@@ -14,15 +14,45 @@
         <a href="contact.html">Contact</a>        
     </nav>
   </header>
-    <main>
-      <h1>Coming Soon</h1>
-    </main>
+  <main class="home-layout">
+    <!-- Left Section -->
+    <section class="intro-section">
+      <h1 class="name">Najee Ullah</h1>
+      <p class="intro">
+        lorem ipsum dolor
+      </p>
+
+      <div class="interests">
+        <h2>Interests</h2>
+        <ul id="interestsList"></ul>
+      </div>
+    </section>
+
+    <!-- Right Section -->
+    <section class="skills-section">
+      <div class="skills-grid">
+
+        <div class="box tools">
+          <h2>Tools</h2>
+          <div class="grid-list" id="toolsGrid"></div>
+        </div>
+
+        <div class="box development">
+          <h2>Development</h2>
+          <div class="grid-list" id="developmentGrid"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
 <footer>
   <p>
     <pre>© 2025 najeeullah.com 
       </pre>
     </p>
 </footer>
-
+<script src="script.js"></script>
+<script>loadInterests();loadDevelopments();loadTools();</script>
 </body>
 </html>
