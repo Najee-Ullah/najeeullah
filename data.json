@@ -1,87 +1,49 @@
 {
   "projects":[
   {
-    "name": "Project Uno",
-    "image": "./Assets/Images/witcher.jpg",
-    "description": "lorem ipsum dolor",
-    "link": "najeeullah.com",
-    "gitlink": "najeeullah.com"
-  },
-  {
-    "name": "Project Uno",
-    "image": "./Assets/Images/witcher.jpg",
-    "description": "lorem ipsum dolor",
-    "link": "najeeullah.com",
-    "gitlink": "najeeullah.com"
-  },
-  {
-    "name": "Project Uno",
-    "image": "./Assets/Images/witcher.jpg",
-    "description": "lorem ipsum dolor",
-    "link": "najeeullah.com",
-    "gitlink": "najeeullah.com"
-  },
-  {
-    "name": "Project Uno",
-    "image": "./Assets/Images/witcher.jpg",
-    "description": "lorem ipsum dolor",
-    "link": "najeeullah.com",
-    "gitlink": "najeeullah.com"
-  },
-  {
-    "name": "Project Uno",
-    "image": "./Assets/Images/witcher.jpg",
-    "description": "lorem ipsum dolor",
-    "link": "najeeullah.com",
-    "gitlink": "najeeullah.com"
+    "name": "Cooked",
+    "image": "./Assets/Images/Cooked-Capsule.jpg",
+    "description": "Core programming practice project",
+    "link": "https://najeeullah1.itch.io/cooked",
+    "gitlink": "https://github.com/Najee-Ullah/Cooked"
   }
 ],
 
 "socials":[
   {    
-      "name": "Itch.io",
-      "icon": "./Assets/Icons/itch.svg",
-      "link": "https://www.itch.io"
-  },
-  {    
-      "name": "BlueSky",
-      "icon": "./Assets/Icons/bluesky.svg",
-      "link": "https://www.bluesky.app"
-  },
-  {    
-      "name": "Github",
-      "icon": "./Assets/Icons/github.svg",
-      "link": "https://www.github.com"
+      "name": "LinkedIn",
+      "icon": "./Assets/Icons/linkedin.svg",
+      "link": "http://www.linkedin.com/in/najee-ullah-9a1bb227b"
   },
   {    
       "name": "Itch.io",
       "icon": "./Assets/Icons/itch.svg",
-      "link": "https://www.itch.io"
-  },
-  {    
-      "name": "BlueSky",
-      "icon": "./Assets/Icons/bluesky.svg",
-      "link": "https://www.bluesky.app"
+      "link": "https://najeeullah1.itch.io/"
   },
   {    
       "name": "Github",
       "icon": "./Assets/Icons/github.svg",
-      "link": "https://www.github.com"
+      "link": "https://github.com/Najee-Ullah"
   }
 ],
   "interests": [
-    "Video Games"
+    "Video Games",
+    "Rome",
+    "Books"
   ],
   "tools": [
     "Unity",
-    "Example",
-    "Git & GitHub",
-    "Blender"
+    "Photoshop",
+    "Blender",
+    "Figma",
+    "Git & GitHub"
   ],
   "development": [
     "C#",
     "JavaScript",
     "HTML",
-    "CSS"
+    "CSS",
+    "MySQL",
+    "Git"
   ]
 }
