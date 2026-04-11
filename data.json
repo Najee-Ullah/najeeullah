@@ -6,6 +6,26 @@
     "description": "Core programming practice project",
     "link": "https://najeeullah1.itch.io/cooked",
     "gitlink": "https://github.com/Najee-Ullah/Cooked"
+  },
+  {
+    "name": "Arithmetic Skill",
+    "image": "./Assets/Images/Arithmetic.png",
+    "description": "20 Second Game Jam HighScore Game",
+    "link": "https://najeeullah1.itch.io/arithmetic-skill",
+    "gitlink": "https://github.com/Najee-Ullah/Arithmetic-Skill"
+  },
+  {
+    "name": "Disco Pomodoro",
+    "image": "./Assets/Images/Pomodoro.png",
+    "description": "Productivity Tool made in Unity",
+    "link": "https://najeeullah1.itch.io/disco-pomodoro",
+    "gitlink": "https://github.com/Najee-Ullah/Disco-Pomodoro"
+  },
+  {
+    "name": "Icon Generator",
+    "image": "./Assets/Images/IconGen.png",
+    "description": "Unity Editor Tool for Generating Icons",
+    "link": "https://assetstore.unity.com/packages/tools/utilities/icon-generator-ultimate-icon-generation-tool-346108"
   }
 ],
 
@@ -27,19 +47,22 @@
   }
 ],
   "interests": [
-    "Video Games",
+    "Video Game Development",
     "Rome",
+    "Witcher",
     "Books"
   ],
   "tools": [
     "Unity",
     "Photoshop",
+    "Audacity",
     "Blender",
     "Figma",
     "Git & GitHub"
   ],
   "development": [
     "C#",
+    "C++",
     "JavaScript",
     "HTML",
     "CSS",
