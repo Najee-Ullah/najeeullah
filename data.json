@@ -48,17 +48,17 @@
 ],
   "interests": [
     "Video Game Development",
-    "Rome",
     "Witcher",
     "Books"
   ],
   "tools": [
     "Unity",
+    "Visual Studio",
     "Photoshop",
+    "Git & GitHub",
+    "Aseprite",
     "Audacity",
-    "Blender",
-    "Figma",
-    "Git & GitHub"
+    "Blender"
   ],
   "development": [
     "C#",
